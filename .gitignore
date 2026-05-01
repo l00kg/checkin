@@ -1,0 +1,34 @@
+# Virtualenv / Python cache
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+*.pyc
+*.pyo
+*.pyd
+
+# Local configuration and secrets
+checkin.toml
+secrets.toml
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*.p12
+
+# Tooling / generated artifacts
+.playwright/
+.hermes/
+.cache/
+build/
+dist/
+*.egg-info/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

@@ -1,0 +1,20 @@
+[settings]
+headless = true
+channel = "chrome"
+
+[[sites]]
+name = "nodeseek"
+type = "nodeseek"
+url = "https://www.nodeseek.com/board"
+# NodeSeek 必须使用移动端 UA
+user_agent = "YOUR_NODESEEK_MOBILE_USER_AGENT"
+# 一般只需要 session + smac；如果你手头有新鲜的 cf_clearance，也可以临时加上
+cookies = { session = "YOUR_NODESEEK_SESSION", smac = "YOUR_NODESEEK_SMAC" }
+
+[[sites]]
+name = "v2ex"
+type = "v2ex"
+url = "https://www.v2ex.com/"
+# V2EX 的 user_agent 必须和 A2 cookie 对应的浏览器环境一致
+user_agent = "YOUR_V2EX_USER_AGENT"
+cookies = { A2 = "YOUR_V2EX_A2" }
